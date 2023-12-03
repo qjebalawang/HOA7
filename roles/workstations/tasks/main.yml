@@ -1,0 +1,11 @@
+- name: install unzip
+  package:
+    name: unzip
+
+- name: install terraform
+  unarchive:
+    src: /home/jhoana/Downloads/terraform_0.12.28_linux_amd64.zip
+    dest: /usr/local/bin
+    mode: 0755
+    owner: root
+    group: root
